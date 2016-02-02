@@ -42,8 +42,8 @@ $(document).ready(function () {
      (budgetInput === "2")) {
        $(".beach").show();
      }else if ((whereInput === "3") && (whatInput === "3") &&
-     (budgetInput === "3")) {
-       $(".low_history").show();
+     (budgetInput === "2")) {
+       $(".high_history").show();
      }else if ((whereInput === "3") && (whatInput === "3") &&
      (budgetInput === "2")) {
        $(".history").show();
