@@ -42,10 +42,10 @@ $(document).ready(function () {
      (budgetInput === "2")) {
        $(".beach").show();
      }else if ((whereInput === "3") && (whatInput === "3") &&
-     (budgetInput === "2")) {
+     (budgetInput === "3")) {
        $(".low_history").show();
      }else if ((whereInput === "3") && (whatInput === "3") &&
-     (budgetInput === "3")) {
+     (budgetInput === "2")) {
        $(".history").show();
      }else if ((whereInput === "3") && (whatInput === "3"||"2") && (budgetInput === "1")) {
        alert("Your budget is low!!!")
