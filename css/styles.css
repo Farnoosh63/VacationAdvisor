@@ -28,7 +28,7 @@
    margin-right: auto;
 }
 
-.error, .beach, .nature, .history, .low_history {
+.error, .beach, .nature, .history, .high_history {
   display: none;
 }
 

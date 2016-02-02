@@ -43,7 +43,7 @@ $(document).ready(function () {
        $(".beach").show();
      }else if ((whereInput === "3") && (whatInput === "3") &&
      (budgetInput === "2")) {
-       $(".low_history").show();
+       $(".high_history").show();
      }else if ((whereInput === "3") && (whatInput === "3") &&
      (budgetInput === "3")) {
        $(".history").show();
