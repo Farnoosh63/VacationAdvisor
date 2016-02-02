@@ -50,6 +50,9 @@ $(document).ready(function () {
      }else if ((whereInput === "3") && (whatInput === "3"||"2") && (budgetInput === "1")) {
        alert("Your budget is low!!!")
        $(".error").show();
+     }else if ((whereInput === "2") && (whatInput === "2") && (budgetInput === "3")) {
+       alert("Your budget is low!!!")
+       $(".error").show();
      }else if ((whereInput === "1") && (whatInput === "2") &&
      (budgetInput === "2" || "3")) {
        alert("We cannot provide you any options with combination of nature & Realx and Spa !!!")
