@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vacation Advisor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/script.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Travel Inspiration</h3>
+                <nav>
+                  <ul class="nav masthead-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="mailto:farnoosh@pdx.edu">Contact</a></li>
+                  </ul>
+                </nav>
+            </div> <!-- End of class inner -->
+          </div>  <!-- End of class masthead clearfix -->
+
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Get Travel Ideas</h1>
+
+          <div id="inspires">
+            <form>
+              <div class="form-group">
+
+<!-- Name question -->
+                <h4 id="Name"><span class="number">1  </span>What is Traveller's Name</h4>
+                <input type="text" class="form-control" id="Name" placeholder="Name of the traveller">
+
+<!-- Where You want to go question -->
+                 <h4 for="Where"><span class="number">2  </span>Where Would You Like To Go:</h4>
+                 <select class="form-control" id="Where" type="text">
+                   <option value="" default selected>Please Select</option>
+                   <option value="1">Nature</option>
+                   <option value="2">Beach</option>
+                   <option value="3">History</option>
+                 </select>
+
+<!-- What you like question -->
+
+                 <div class="radio">
+                   <h4 id="What"><span class="number">3  </span>What Would You Like: </h4>
+                  <label>
+                    <input name="whatYouLike" type="radio" value="1">Adventure
+                  </label>
+                  <label>
+                    <input name="whatYouLike" type="radio" value="2">Relax and Spa
+                  </label>
+                  <label>
+                    <input name="whatYouLike" type="radio" value="3">Musuem, Food and culture
+                  </label>
+                </div>  <!-- End of class radio-->
+
+<!-- budget question-->
+                <h4 for="Budget"><span class="number">4 </span>Maximun $ You Budget Per Person:</h4>
+
+                  <select class="form-control" id="Budget">
+                    <option value="" default selected>Please Select</option>
+                    <option value="1"> Less than $500 </option>
+                    <option value="3">Between $1000 to $3000</option>
+                    <option value="2"> More than $3000 </option>
+                  </select>
+
+<!-- Age question-->
+                  <h4 for="Age"><span class="number">5  </span>Please select your age range: </h4>
+                    <select class="form-control" id="Age">
+                    <option value="" default selected>  Choose Age From Here   </option>
+                    <option value="Below 18 years">Below 18 years</option>
+                    <option value="Between 18-60 years">Between 18-60 years</option>
+                    <option value="Above 60 years">Above 60 years</option>
+                    </select>
+
+
+              </div>  <!-- End of class form-group-->
+
+              <button type="submit" class="btn btn-default">Inspire Me!</button>
+            </form>  <!-- End of class form -->
+          </div>  <!-- End of id inspires-->
+          </div> <!-- End of class inner cover -->
+
+
+
+<!-- error message-->
+          <div class="error">
+            <h4>Sorry <samp class="Name"></samp> , we are unable to process your request. One of the below
+              <a href="mailto:farnoosh@pdx.edu"><u>contact us.</u></a></h4>
+              <img src="img/Error.png" alt="error">
+          </div>  <!-- End of class error -->
+
+  <!-- below 1000 ideas US and Canada-->
+          <div class="history">
+            <h4>Dear <samp class="Name"></samp> , I have these three ideas for you</h4>
+            <div class="panel panel-default">
+              <div class="panel-heading">Low budget for history ideas</div>
+              <!-- Table -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Hotel</th>
+                    <th>country or city</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Playa Manuel Antonio</td>
+                    <td>Rome</td>
+                    <td>$465 per night</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Vista Golfo</td>
+                    <td>Greece</td>
+                    <td>$415 per night</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Oak Hotel</td>
+                    <td>Egypt</td>
+                    <td>$325 per night</td>
+                  </tr>
+                </tbody>  <!-- End of body of the table -->
+
+              </table>   <!-- End of class table -->
+            </div>  <!-- End of class panel panel-default  -->
+          </div>  <!-- End of class low-US -->
+
+    <!-- High budget ideas for US and Canada-->
+          <div class="nature">
+            <h3> Dear <samp class="Name"></samp>, here is the 3 travel ideas for you, enjoy!</h3>
+            <div class="img">
+              <a target="_blank" href="img/caspian.jpg">
+                <img src="img/caspian.jpg" alt="Caspian Sea" width="300" height="200">
+              </a>
+              <div class="desc">Discover the beauty of the world's biggest lake, Caspian Sea. Stay here for only $345/night.</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/costarica.jpg">
+                <img src="img/costarica.jpg" alt="Costarica" width="300" height="200">
+              </a>
+              <div class="desc">The festive city of San Juan is the perfect place to experience true Puerto Rican nature, experience here for $213/night.</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/turkey.jpg">
+                <img src="img/turkey.jpg" alt="Kemer" width="300" height="200">
+              </a>
+              <div class="desc">Approximately 40 miles southeast of Antalya, Enjoy a hike along the promenade and a visit the nature of the area with only $450/night. </div>
+            </div>
+          </div>  <!-- End of class high-US -->
+
+<!-- High budget ideas for Europe -->
+            <div class="beach">
+              <h3> Dear <samp class="Name"></samp>, here is the 3 travel ideas for you, enjoy!</h3>
+              <div class="img">
+                  <a target="_blank" href="img/Greece.jpg">
+                    <img src="img/Greece.jpg" alt="Greece" width="300" height="200">
+                  </a>
+                <div class="desc">This is Greece</div>
+              </div>
+
+                <div class="img">
+                  <a target="_blank" href="img/London.jpg">
+                    <img src="img/London.jpg" alt="London" width="300" height="200">
+                  </a>
+                  <div class="desc">This is London</div>
+                </div>
+
+                <div class="img">
+                  <a target="_blank" href="img/spain.jpg">
+                    <img src="img/spain.jpg" alt="Spain" width="300" height="200">
+                  </a>
+                  <div class="desc">This is Spain</div>
+                </div>
+              </div>  <!-- End of class high-EU -->
+
+<!-- low budget ideas for history -->
+              <div class="low_history">
+                <h3> Dear <samp class="Name"></samp>, here is the 3 travel ideas for you, enjoy!</h3>
+                <div class="img">
+                  <a target="_blank" href="img/caspian.jpg">
+                    <img src="img/caspian.jpg" alt="Iran" width="300" height="200">
+                  </a>
+                  <div class="desc">Discover the beauty of the world's biggest lake, Caspian Sea. So much to discover about the culture. Stay here for only $345/night.</div>
+                </div>
+
+                <div class="img">
+                  <a target="_blank" href="img/turkey.jpg">
+                    <img src="img/turkey.jpg" alt="Kemer" width="300" height="200">
+                  </a>
+                  <div class="desc">This is Kemer in Turkey</div>
+                </div>
+
+                <div class="img">
+                  <a target="_blank" href="img/dubai.jpg">
+                    <img src="img/dubai.jpg" alt="Dubai" width="300" height="200">
+                  </a>
+                  <div class="desc">This is Dubai in UAE</div>
+                </div>
+              </div>  <!-- End of class high-ME -->
+
+
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>&copy 2016, Farnoosh LLC All rights reserved. Farnoosh LLC<a href=TermsAndConditions.html> Terms of Use</a>.</p>
+            </div> <!-- End of class inner -->
+          </div> <!-- End of class mastfoot -->
+
+        </div>  <!-- End of class cover-container -->
+
+      </div>  <!-- End of class site-wrapper-inner -->
+
+    </div>  <!-- End of class site-wrapper -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

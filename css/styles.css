@@ -1,0 +1,63 @@
+.number {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.checkbox-inline {
+  font-size: 18px;
+}
+
+.form-group {
+  line-height: 25px;
+}
+
+.cover {
+  padding: 0 110px;
+}
+
+.footer {
+   width: 100%;
+   height: 80px;
+   padding: 1px;
+   -moz-border-radius: 35px;
+   border-radius: 35px;
+   position: fixed;
+   bottom: 0;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.error, .beach, .nature, .history, .low_history {
+  display: none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+table {
+  color: black;
+  text-align: left;
+}
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
