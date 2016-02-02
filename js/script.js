@@ -3,26 +3,6 @@ $(document).ready(function () {
   $("#inspires form").submit(function(event) {
 
     $("#inspires").hide();
-  //
-  //   var nameInput = $("input#Name").val();
-  //   var whereInput = $("select#Where").val();
-  //   var whatInput = $('input[name="whatYouLike"]:checked').val();
-  //   var budgetInput = $("select#Budget").val();
-  //   var ageInput = $("select#Age").val();
-  //
-  //
-  //   $(".Where").text(whereInput);
-  //   $(".What").text(whatInput);
-  //   $(".Budget").text(budgetInput);
-  //   $(".Age").text(ageInput);
-  //
-  //   $(".result").show();
-  //
-  //
-  //
-  // }); //end of click goBack
-  // $("button#confirm").click(function() {
-  //   $(".result").hide(function() {
 
       var nameInput = $("input#Name").val();
       $(".Name").text(nameInput);
